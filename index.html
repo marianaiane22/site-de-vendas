@@ -3,21 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Básico</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vitrine PP - Moda Feminina Petite de Luxo</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
     <header>
-        <h1>Meu Projeto Básico</h1>
+        <div class="container">
+            <h1 class="logo">Vitrine PP</h1>
+            <nav>
+                <a href="#colecao">Coleção Petite</a>
+                <a href="#contato">Atendimento</a>
+                <button id="carrinho-btn" class="icon-btn" aria-label="Abrir Carrinho">
+                    <i class="fas fa-shopping-bag"></i> (<span id="contador-carrinho">0</span>)
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <p id="mensagem">Clique no botão abaixo para ver a mágica do JavaScript!</p>
-        <button id="meuBotao">Clique Aqui</button>
+    <main class="container">
+        
+        <section id="banner" class="luxo-banner">
+            <h2>Elegância sob medida.</h2>
+            <p>Descubra o caimento perfeito em nossa Coleção Petite.</p>
+            <a href="#colecao" class="btn-dourado">Ver Coleção</a>
+        </section>
+
+        <section id="colecao">
+            <h2 class="titulo-secao">Nossas Joias da Moda</h2>
+            <div class="lista-produtos">
+                
+                <div class="produto" data-id="1" data-nome="Vestido de Seda Lavanda" data-preco="450.00">
+                    <img src="https://via.placeholder.com/300x400/E6E6FA/B5A6FF?text=Vestido+Lavanda" alt="Vestido de Seda Lavanda">
+                    <h3>Vestido de Seda Lavanda</h3>
+                    <p class="descricao">Ajuste perfeito e acabamento em renda dourada.</p>
+                    <p class="preco">R$ 450,00</p>
+                    <button class="adicionar-carrinho btn-dourado">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto" data-id="2" data-nome="Blusa Chiffon Menta" data-preco="210.50">
+                    <img src="https://via.placeholder.com/300x400/C8E6C9/8BC34A?text=Blusa+Menta" alt="Blusa Chiffon Menta">
+                    <h3>Blusa Chiffon Menta</h3>
+                    <p class="descricao">Leveza e transparência. Detalhe de botão dourado.</p>
+                    <p class="preco">R$ 210,50</p>
+                    <button class="adicionar-carrinho btn-dourado">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto" data-id="3" data-nome="Saia Plissada Rosa Chá" data-preco="320.00">
+                    <img src="https://via.placeholder.com/300x400/F8BBD0/E91E63?text=Saia+Rosa+Cha" alt="Saia Plissada Rosa Chá">
+                    <h3>Saia Plissada Rosa Chá</h3>
+                    <p class="descricao">Corte impecável para a silhueta petite. Cinto fino.</p>
+                    <p class="preco">R$ 320,00</p>
+                    <button class="adicionar-carrinho btn-dourado">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+        </section>
     </main>
+    
+    <div id="modal-carrinho" class="modal">
+        <div class="modal-content">
+            <span class="fechar-modal" aria-label="Fechar Modal">&times;</span>
+            <h3 class="titulo-modal-carrinho">Sua Bolsa de Compras</h3>
+            <ul id="itens-carrinho">
+                </ul>
+            <p class="total-carrinho">Total: <span id="carrinho-total">R$ 0,00</span></p>
+            <button class="checkout-btn btn-dourado">Finalizar Pedido</button>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025</p>
+        <div class="container" id="contato">
+            <p>&copy; 2025 Vitrine PP. Elegância em todos os tamanhos.</p>
+            <p>Atendimento exclusivo: contato@vitrinepp.com.br</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
