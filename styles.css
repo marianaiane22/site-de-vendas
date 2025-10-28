@@ -1,3 +1,10 @@
+/* Paleta de Cores Atualizada:
+   - Fundo/Base: #FAF0E6 (Bege suave/Creme)
+   - Header/Footer: #FFFFFF (BRANCO PURO)
+   - Dourado (Acento/Botões): #C9B037 (OURO RICO / OURO VELHO)
+   - Texto Principal: #333333
+*/
+
 /* ==================================== */
 /* 0. CONFIGURAÇÃO GERAL E TIPOGRAFIA   */
 /* ==================================== */
@@ -24,7 +31,7 @@ body {
 /* 1. CABEÇALHO E NAVEGAÇÃO             */
 /* ==================================== */
 header {
-    background-color: #E6E6FA; /* Lavanda Pálido */
+    background-color: #FFFFFF; /* ALTERADO: Branco */
     padding: 20px 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -41,7 +48,7 @@ header .container {
 /* Logo elegante */
 .logo {
     font-family: 'Playfair Display', serif; 
-    font-size: 38px; /* Aumentado */
+    font-size: 38px; 
     color: #333333;
     font-weight: 700; 
     letter-spacing: 3px;
@@ -57,20 +64,20 @@ header nav a, .icon-btn {
     background: none;
     border: none;
     cursor: pointer;
-    font-family: 'Lato', sans-serif; /* Garante a fonte para os links */
+    font-family: 'Lato', sans-serif; 
 }
 
 header nav a:hover, .icon-btn:hover {
-    color: #FFD700; /* Dourado no hover */
+    color: #C9B037; /* ALTERADO: Dourado Rico no hover */
 }
 
 /* ==================================== */
 /* 2. BOTÃO DOURADO (LUXO)              */
 /* ==================================== */
 .btn-dourado {
-    background-color: #FFD700; /* Dourado */
-    color: #333333; 
-    border: 1px solid #FFD700;
+    background-color: #C9B037; /* ALTERADO: Dourado Rico */
+    color: #FFFFFF; /* Texto branco no botão para melhor contraste */
+    border: 1px solid #C9B037;
     padding: 10px 25px;
     border-radius: 30px; 
     text-decoration: none;
@@ -82,7 +89,7 @@ header nav a:hover, .icon-btn:hover {
 }
 
 .btn-dourado:hover {
-    background-color: #e3c000; 
+    background-color: #a38d2f; /* ALTERADO: Dourado mais escuro no hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -91,16 +98,16 @@ header nav a:hover, .icon-btn:hover {
 /* ==================================== */
 #banner {
     background-color: #fffaf0; 
-    border: 1px solid #FFD700; 
+    border: 1px solid #C9B037; /* ALTERADO: Borda Dourado Rico */
     text-align: center;
     padding: 100px 20px;
-    margin: 40px 0;
+    margin: 60px 0; 
     border-radius: 10px;
 }
 
 #banner h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 52px; /* Maior e mais impactante */
+    font-size: 52px; 
     margin-bottom: 15px;
     color: #333333;
 }
@@ -114,19 +121,19 @@ header nav a:hover, .icon-btn:hover {
 .titulo-secao {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    margin: 50px 0 40px;
+    margin: 80px 0 50px; 
     font-size: 36px;
     color: #333333;
     position: relative;
-    font-weight: 400; /* Mais leve */
+    font-weight: 400; 
 }
 
 .titulo-secao::after {
     content: '';
     display: block;
-    width: 60px; /* Maior */
-    height: 1px; /* Mais fino */
-    background-color: #FFD700; 
+    width: 60px; 
+    height: 1px; 
+    background-color: #C9B037; /* ALTERADO: Sublinhado Dourado Rico */
     margin: 10px auto 0;
 }
 
@@ -136,13 +143,13 @@ header nav a:hover, .icon-btn:hover {
 .lista-produtos {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 50px; 
+    justify-content: center; 
 }
 
 .produto {
     background-color: white;
-    padding: 20px;
+    padding: 25px; 
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     width: 300px;
@@ -152,14 +159,14 @@ header nav a:hover, .icon-btn:hover {
 
 .produto:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px); /* Efeito sutil */
+    transform: translateY(-5px); 
 }
 
 .produto img {
     width: 100%;
     height: auto;
     border-radius: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 20px; 
     border: 1px solid #f0f0f0;
 }
 
@@ -173,79 +180,3 @@ header nav a:hover, .icon-btn:hover {
 
 .produto .descricao {
     color: #555;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.produto .preco {
-    font-size: 26px; /* Maior destaque */
-    color: #FFD700; 
-    font-weight: 700;
-    margin: 15px 0;
-}
-
-/* ==================================== */
-/* 5. RODAPÉ (FOOTER)                   */
-/* ==================================== */
-footer {
-    background-color: #E6E6FA; 
-    color: #333333;
-    padding: 30px 0;
-    margin-top: 60px;
-    text-align: center;
-}
-
-footer p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-/* ==================================== */
-/* 6. MODAL DO CARRINHO                 */
-/* ==================================== */
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 1001; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3); 
-}
-
-.modal-content {
-    background-color: #fffaf0; 
-    margin: 10% auto; 
-    padding: 30px;
-    border: 2px solid #FFD700; 
-    width: 90%; 
-    max-width: 400px;
-    border-radius: 5px;
-    position: relative;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
-}
-
-.fechar-modal {
-    color: #FFD700;
-    float: right;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.titulo-modal-carrinho {
-    font-family: 'Playfair Display', serif;
-    color: #333333;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-#itens-carrinho li {
-    font-family: 'Lato', sans-serif;
-    padding: 10px 0;
-    border-bottom: 1px solid #E6E6FA;
-}
-
-.total-carrinho span {
-    color: #FFD700; 
-}
